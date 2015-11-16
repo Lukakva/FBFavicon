@@ -97,7 +97,7 @@ var FacebookNotifier = {
 	},
 	notificationCount: function() {
 		var title = document.querySelector("title").innerHTML;
-		var regex = new RegExp(/\(([0-9]+)\) Facebook/);
+		var regex = new RegExp(/\(([0-9]+)\).*/); // so that it works for other pages too (worked for homepage only)
 		var count = title.match(regex);
 
 		return count ? parseInt(count[1]) : 0;
