@@ -6,8 +6,7 @@
     "version": "1.0",
 
     "permissions": [
-        "*://www.facebook.com/*",
-        "*://www.messenger.com/*"
+        "*://www.facebook.com/*"
     ],
 
     "icons": {
